@@ -1,0 +1,6 @@
+.shelf {
+    display: flex;
+    background-color: rgba(249, 249, 249, 0.09);
+    padding: 2em;
+    border-radius: 8px;
+}

@@ -1,0 +1,13 @@
+.icon__container {
+    margin: 1em;
+}
+
+.skill__logo {
+    height: 5em;
+    width: 5em;
+}
+
+.skill__logo, .skill__name {
+    text-align: center;
+    margin: 0;
+}
