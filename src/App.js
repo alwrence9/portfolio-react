@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation/Navigation";
 import AboutMe from "./components/AboutMe/AboutMe";
 import SkillsShelf from "./components/SkillShelf/SkillsShelf";
 import Experiences from "./components/Experiences/Experiences";
+import Starlight from "./components/Starlight/Starlight";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <Navigation/>
           <main>
               <AboutMe/>
+              <Starlight />
               <SkillsShelf/>
               <Experiences/>
           </main>

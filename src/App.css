@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.AboutMe {
+  position: relative;
+  z-index: 10; /* Ensure AboutMe is on top */
+}
+
+.Starlight {
+  position: relative;
+  z-index: 1; /* Ensure Starlight is below AboutMe */
+}
