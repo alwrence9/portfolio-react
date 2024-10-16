@@ -1,4 +1,3 @@
-// Particle class for stars
 class Particle {
     constructor(effect) {
         this.effect = effect;
@@ -25,11 +24,9 @@ class Particle {
         const ratio = this.y / height;
         const gradients = this.effect.gradients;
         let color;
-
         for (let i = 0; i < gradients.length - 1; i++) {
             const start = gradients[i];
             const end = gradients[i + 1];
-
             if (ratio >= start.ratio && ratio <= end.ratio) {
                 const t = (ratio - start.ratio) / (end.ratio - start.ratio);
                 const r = Math.round(start.color[0] + t * (end.color[0] - start.color[0]));
@@ -39,7 +36,6 @@ class Particle {
                 break;
             }
         }
-
         return color;
     }
 
@@ -48,7 +44,6 @@ class Particle {
             // Skip drawing if the particle is out of bounds
             return;
         }
-
         const baseColor = this.getColor();
         if (!baseColor) {
             return; // Skip drawing if baseColor is undefined
@@ -70,7 +65,6 @@ class Particle {
         this.dx = this.effect.mouse.x - this.x;
         this.dy = this.effect.mouse.y - this.y;
         this.distance = Math.sqrt(this.dx * this.dx + this.dy * this.dy);
-
         if (this.distance < this.effect.mouse.radius) {
             // Move the particle away from the mouse
             const angle = Math.atan2(this.dy, this.dx);
@@ -81,19 +75,15 @@ class Particle {
             this.vx += (this.originX - this.x) * 0.05;
             this.vy += (this.originY - this.y) * 0.05;
         }
-
         // Apply friction
         this.vx *= this.friction;
         this.vy *= this.friction;
-
         // Update position
         this.x += this.vx;
         this.y += this.vy;
-
         if (this.size > this.minSize) {
             this.size -= this.pulsateSpeed;
         }
-
         this.colorPhase += this.colorSpeed; // Slower flashing speed
         this.draw();
     }

@@ -1,0 +1,13 @@
+.about-me-container {
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: space-between; /* Add space between the items if needed */
+    align-items: center;
+    width: 100%; /* Full width */
+    height: 100%;
+}
+
+.about-me-item {
+    flex: 1; /* This ensures each item takes up equal space */
+    padding: 10px; /* Optional: Add some padding for better spacing */
+}

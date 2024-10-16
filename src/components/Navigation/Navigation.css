@@ -2,6 +2,9 @@
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+    position: fixed;
+    margin-left: 20px;
+    z-index: 20;
 }
 
 .nav__items {

@@ -8,10 +8,14 @@ import Starlight from "./components/Starlight/Starlight";
 function App() {
   return (
       <div className="App">
-          <Navigation/>
+          <Navigation />
           <main>
-              <AboutMe/>
-              <Starlight />
+              <div className="starlight" >
+                  <Starlight className="starlight" />
+              </div>
+              <div className="about-me">
+                <AboutMe className="about-me" />
+              </div>
               <SkillsShelf/>
               <Experiences/>
           </main>
