@@ -17,7 +17,7 @@ function AboutMe() {
                 <Socials />
             </div>
             <div className="about-me-item">
-                <h2>About Me</h2>
+                <h2>About me</h2>
                 <div>
                     <p>
                         I am studying Software Development at Dawson College. I am interested in machine learning, web development, and cloud computing.
