@@ -10,4 +10,9 @@
 .about-me-item {
     flex: 1; /* This ensures each item takes up equal space */
     padding: 10px; /* Optional: Add some padding for better spacing */
+
+}
+
+p {
+    font-size: 22px;
 }

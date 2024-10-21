@@ -1,0 +1,7 @@
+#project__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px; /* Add space between the items */
+    padding: 20px; /* Add some padding around the container */
+}

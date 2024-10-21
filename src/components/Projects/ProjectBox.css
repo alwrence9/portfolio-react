@@ -1,0 +1,21 @@
+/* ProjectBox.css */
+.project-box {
+    flex: 0 1 300px;
+    background-color: rgba(249, 249, 249, 0.09);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /*max-width: 20%;*/
+}
+
+.project-box h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.project-box p {
+    margin: 10px 0;
+}
