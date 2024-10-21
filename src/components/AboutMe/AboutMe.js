@@ -1,5 +1,6 @@
 import React from 'react';
 import './aboutMe.css'
+import Socials from "../Socials/Socials";
 
 function AboutMe() {
     return (
@@ -13,6 +14,7 @@ function AboutMe() {
                     <h3>Get in touch</h3>
                     <a href="mailto: ashleyvu2209@gmail.com" className="btn">ashleyvu2209@gmail.com</a>
                 </div>
+                <Socials />
             </div>
             <div className="about-me-item">
                 <h2>About Me</h2>
