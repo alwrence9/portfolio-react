@@ -1,8 +1,10 @@
 import React from 'react';
+import './Experience.css'
 
-function Experience({ company, description, url }) {
+function Experience({ company, description, url, logo }) {
     return (
-        <div className="info__box">
+        <div className="experience-box">
+            {logo && <img className="logo" src={logo} /> }
             <div className="info__text">
                 <h3>{company}</h3>
                 <p>{description}</p>

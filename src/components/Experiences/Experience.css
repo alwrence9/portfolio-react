@@ -1,0 +1,21 @@
+.experience-box {
+    background-color: rgba(249, 249, 249, 0.09);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin: 30px;
+}
+
+.experience-box h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.experience-box p {
+    margin: 10px 0;
+}
+
+.logo {
+    height: 60px;
+    margin: 10px;
+}
