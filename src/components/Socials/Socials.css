@@ -1,3 +1,38 @@
-.social {
-    z-index: 10;
+.footer__social-link-item {
+    position: relative;
+    margin: 0 10px; /* Add some margin between the items to prevent overlap */
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+.footer__social-image {
+    display: block;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.hover-container:hover .footer__social-image {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.hover-text {
+    position: absolute;
+    bottom: -40px; /* Position the text below the image initially */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75); /* Dark background with some transparency */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease; /* Smooth transition for opacity and position */
+    white-space: nowrap;
+    pointer-events: none; /* Ensure the hover text itself does not trigger hover effects */
+}
+
+.hover-container:hover .hover-text {
+    opacity: 1;
+    bottom: -60px; /* Move the text further down to avoid collision */
 }
